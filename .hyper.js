@@ -1,5 +1,12 @@
+// Future versions of Hyper may add additional config options,
+// which will not automatically be merged into this file.
+// See https://hyper.is#cfg for all currently supported options.
+
 module.exports = {
     config: {
+        plugins: ['hyperborder'],
+        borderRadiusOuter: 8,
+        borderRadiusInner: 8,
         updateChannel: "stable",
         fontSize: 12,
         fontFamily: '"Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
@@ -19,7 +26,7 @@ module.exports = {
         webGLRenderer: true,
     },
     plugins: ["hyper-custom-controls"],
-    localPlugins: ["hyper-omni"],
+    localPlugins: ['hyper-omni'],
     hyperMacControls: {
         flipped: true,
     },
